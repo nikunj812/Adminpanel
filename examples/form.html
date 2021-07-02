@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Sky Admin
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/css/all.min.css" rel="stylesheet">
+  <link href="../assets/css/all.min.css" rel="stylesheet">
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/sky-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <div class="logo">
+        <a href="#" class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="../assets/img/logo-small.png">
+          </div>
+          <!-- <p>CT</p> -->
+        </a>
+        <a href="#" class="simple-text logo-normal">
+          Sky Admin
+          <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="./dashboard.html">
+              <i class="fab fa-dashcube"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+
+          <li class="active ">
+            <a href="./form.html">
+              <i class="fas fa-file-alt"></i>
+              <p>Form</p>
+            </a>
+          </li>
+          <li>
+            <a href="./tables.html">
+              <i class="fas fa-table"></i>
+              <p>Table</p>
+            </a>
+          </li>
+          <li>
+            <a href="./notifications.html">
+              <i class="fas fa-bell"></i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="./charts.html">
+              <i class="fas fa-chart-pie"></i>
+              <p>Charts</p>
+            </a>
+          </li>
+          <li>
+            <a href="./user.html">
+                <i class="far fa-user"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <form>
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i> Profile </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                <a class="dropdown-item" href="#">My account</a>
+                <a class="dropdown-item" href="#">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Card -->
+            <div class="registerForm">
+
+              <div class="pt-4 pb-3 pl-3 pr-3">
+
+                <h5 class="text-center mt-1 mb-4">Sign Up</h5>
+
+                <form action="#!">
+
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="md-form md-outline mt-0">
+                        <label for="materialRegisterFormFirstName">First name</label>
+                        <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="md-form md-outline mt-0">
+                        <label for="materialRegisterFormLastName">Last name</label>
+                        <input type="email" id="materialRegisterFormLastName" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="md-form md-outline mt-0">
+                    <label data-error="wrong" data-success="right" for="defaultForm-email2">Your email</label>
+                    <input type="email" id="defaultForm-email2" class="form-control">
+                  </div>
+                  <div class="md-form md-outline mt-0">
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass2">Your password</label>
+                    <input type="password" id="defaultForm-pass2" class="form-control">
+                    <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                      At least 8 characters and 1 digit
+                    </small>
+                  </div>
+
+                  <div class="md-form md-outline">
+                    <label for="materialRegisterFormPhone">Phone number</label>
+                    <input type="number" id="materialRegisterFormPhone" class="form-control"
+                      aria-describedby="materialRegisterFormPhoneHelpBlock">
+                    <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-3">
+                      Optional - for two step authentication
+                    </small>
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-4">Sign Up</button>
+
+                </form>
+
+                <div class="text-center mb-2">
+
+
+                  <p>or sign up with:</p>
+
+                  <a type="button" class="btn-floating btn-fb btn-sm mr-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a type="button" class="btn-floating btn-tw btn-sm mr-1">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a type="button" class="btn-floating btn-li btn-sm mr-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a type="button" class="btn-floating btn-git btn-sm">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-md-12">
+            <!-- Card -->
+            <div class="FormLogin">
+
+              <div class="pt-4 pb-3 pl-3 pr-3">
+
+                <h5 class="text-center mt-1 mb-4">Sign In</h5>
+
+                <form action="#!">
+
+                  <div class="md-form md-outline">
+                    <input type="email" id="defaultForm-email1" class="form-control">
+                    <label data-error="wrong" data-success="right" for="defaultForm-email1">Your email</label>
+                  </div>
+                  <div class="md-form md-outline">
+                    <input type="password" id="defaultForm-pass1" class="form-control">
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass1">Your password</label>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+
+
+
+                    <p><a href="">Forgot password?</a></p>
+
+                  </div>
+
+                  <button type="submit" class="btn btn-primary mb-4">Sign in</button>
+                </form>
+
+
+                <p>Not a member? <a href="">Register</a></p>
+
+
+                <div class="text-center pb-2">
+
+                  <p>or sign in with:</p>
+
+                  <a type="button" class="btn-floating btn-fb btn-sm mr-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a type="button" class="btn-floating btn-tw btn-sm mr-1">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a type="button" class="btn-floating btn-li btn-sm mr-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a type="button" class="btn-floating btn-git btn-sm">
+                    <i class="fab fa-github"></i>
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-md-12">
+            <!-- Card -->
+            <div class="formCheckout">
+              <div class="pt-4 pb-3 pl-3 pr-3">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-lg-6 mb-5 mb-lg-0">
+
+                    <h5 class="mb-4 pb-1">Billing details</h5>
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                      <!-- Grid column -->
+                      <div class="col-lg-6">
+
+                        <!-- First name -->
+                        <div class="md-form md-outline mt-0">
+                          <input type="text" id="form11" class="form-control">
+                          <label for="form11">First name</label>
+                        </div>
+
+                      </div>
+                      <!-- Grid column -->
+
+                      <!-- Grid column -->
+                      <div class="col-lg-6">
+
+                        <!-- Last name -->
+                        <div class="md-form md-outline mt-0">
+                          <input type="text" id="form12" class="form-control">
+                          <label for="form12">Last name</label>
+                        </div>
+
+                      </div>
+                      <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Company name -->
+                    <div class="md-form md-outline my-0">
+                      <input type="text" id="form13" class="form-control mb-0">
+                      <label for="form13">Company name (optional)</label>
+                    </div>
+
+                    <!-- Country -->
+                    <div class="d-flex flex-wrap">
+                      <div class="select-outline position-relative w-100">
+                        <select class="mdb-select md-form md-outline">
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Example label</label>
+                      </div>
+                    </div>
+
+                    <!-- Address Part 1 -->
+                    <div class="md-form md-outline mt-0">
+                      <input type="text" id="form14" placeholder="House number and street name" class="form-control">
+                      <label for="form14">Address</label>
+                    </div>
+
+                    <!-- Address Part 2 -->
+                    <div class="md-form md-outline mt-0">
+                      <input type="text" id="form15" placeholder="Apartment, suite, unit etc. (optional)"
+                        class="form-control">
+                      <label for="form15">Address</label>
+                    </div>
+
+                    <!-- Postcode / ZIP -->
+                    <div class="md-form md-outline mt-0">
+                      <input type="text" id="form16" class="form-control">
+                      <label for="form16">Postcode / ZIP</label>
+                    </div>
+
+                    <!-- Town / City -->
+                    <div class="md-form md-outline mt-0">
+                      <input type="text" id="form17" class="form-control">
+                      <label for="form17">Town / City</label>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="md-form md-outline mt-0">
+                      <input type="number" id="form18" class="form-control">
+                      <label for="form18">Phone</label>
+                    </div>
+
+                    <!-- Email address -->
+                    <div class="md-form md-outline mt-0">
+                      <input type="email" id="form19" class="form-control">
+                      <label for="form19">Email address</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mb-4">Checkout</button>
+
+                    <div class="form-check pl-0 mb-4 mb-lg-0">
+                      <input type="checkbox" class="form-check-input filled-in" id="new3">
+                      <label class="form-check-label small text-uppercase card-link-secondary" for="new3">Create an
+                        account?</label>
+                    </div>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-lg-6">
+
+                    <h5 class="mb-4 pb-1">Additional information</h5>
+
+                    <!-- Additional information -->
+                    <div class="md-form md-outline">
+                      <textarea id="form76" class="md-textarea form-control" rows="4"></textarea>
+                      <label for="form76">Additional information</label>
+                    </div>
+
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/sky-admin.min.js?v=2.0.1" type="text/javascript"></script>
+  <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function () {
+      demo.initGoogleMaps();
+    });
+  </script>
+</body>
+
+</html>

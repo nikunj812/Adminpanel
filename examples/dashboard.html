@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Sky Admin
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="../assets/css/all.min.css" rel="stylesheet">
+  <link href="../assets/css/all.min.css" rel="stylesheet">
+  <link href="../assets/css/all.min.css" rel="stylesheet">
+  <link href="../assets/css/all.min.css" rel="stylesheet">
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/sky-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <div class="logo">
+        <a href="#" class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="../assets/img/logo-small.png">
+          </div>
+          <!-- <p>CT</p> -->
+        </a>
+        <a href="#" class="simple-text logo-normal">
+          Sky Admin
+          <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="active ">
+            <a href="./dashboard.html">
+              <i class="fab fa-dashcube"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="./form.html">
+              <i class="fas fa-file-alt"></i>
+              <p>Form</p>
+            </a>
+          </li>
+          <li>
+            <a href="./tables.html">
+              <i class="fas fa-table"></i>
+              <p>Table</p>
+            </a>
+          </li>
+          <li>
+            <a href="./notifications.html">
+              <i class="fas fa-bell"></i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="./charts.html">
+              <i class="fas fa-chart-pie"></i>
+              <p>Charts</p>
+            </a>
+          </li>
+          <li>
+            <a href="./user.html">
+                <i class="far fa-user"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <form>
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i> Profile </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                <a class="dropdown-item" href="#">My account</a>
+                <a class="dropdown-item" href="#">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card_height_100 mb_30">
+              <div class="card_header">
+                <div class="box_header m-0">
+                  <div class="main-title">
+                    <h3 class="m-0">Ratio of User</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card_body p-0">
+                <div id="iq-chart-order" style="height: 400px; position: relative;">
+                  <div dir="ltr" class="resize-sensor"
+                    style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
+                    <div class="resize-sensor-expand"
+                      style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
+                      <div
+                        style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1015px; height: 410px;">
+                      </div>
+                    </div>
+                    <div class="resize-sensor-shrink"
+                      style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
+                      <div
+                        style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;">
+                      </div>
+                    </div>
+                  </div>
+                  <div style="width: 100%; height: 100%; position: relative;"><svg version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="group"
+                      style="width: 100%; height: 100%; overflow: visible;">
+                      <desc>JavaScript chart by amCharts</desc>
+                      <defs>
+                        <clipPath id="id-46">
+                          <rect width="1005" height="400"></rect>
+                        </clipPath>
+                        <linearGradient id="gradient-id-69" x1="1%" x2="99%" y1="59%" y2="41%">
+                          <stop stop-color="#474758" offset="0"></stop>
+                          <stop stop-color="#474758" stop-opacity="1" offset="0.75"></stop>
+                          <stop stop-color="#3cabff" stop-opacity="1" offset="0.755"></stop>
+                        </linearGradient>
+                        <filter id="filter-id-78" width="200%" height="200%" x="-50%" y="-50%"></filter>
+                        <filter id="filter-id-99" width="200%" height="200%" x="-50%" y="-50%"></filter>
+                        <clipPath id="id-132">
+                          <path d="M0,0 L871,0 L871,286 L0,286 L0,0"></path>
+                        </clipPath>
+                        <clipPath id="id-345">
+                          <rect width="871" height="286"></rect>
+                        </clipPath>
+                        <filter id="filter-id-51" width="200%" height="200%" x="-50%" y="-50%">
+                          <feGaussianBlur result="blurOut" in="SourceGraphic" stdDeviation="1.5"></feGaussianBlur>
+                          <feOffset result="offsetBlur" dx="1" dy="1"></feOffset>
+                          <feFlood flood-color="#000000" flood-opacity="0.5"></feFlood>
+                          <feComposite in2="offsetBlur" operator="in"></feComposite>
+                          <feMerge>
+                            <feMergeNode></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                          </feMerge>
+                        </filter>
+                        <filter id="filter-id-137" width="200%" height="200%" x="-50%" y="-50%">
+                          <feGaussianBlur result="blurOut" in="SourceGraphic" stdDeviation="1.5"></feGaussianBlur>
+                          <feOffset result="offsetBlur" dx="1" dy="1"></feOffset>
+                          <feFlood flood-color="#000000" flood-opacity="0.5"></feFlood>
+                          <feComposite in2="offsetBlur" operator="in"></feComposite>
+                          <feMerge>
+                            <feMergeNode></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                          </feMerge>
+                        </filter>
+                        <filter id="filter-id-66" width="120%" height="120%" x="-10%" y="-10%">
+                          <feColorMatrix type="saturate" values="0"></feColorMatrix>
+                        </filter>
+                      </defs>
+                      <g>
+                        <g fill="#ffffff" fill-opacity="0">
+                          <rect width="1005" height="400"></rect>
+                        </g>
+                        <g>
+                          <g role="region" clip-path="url(&quot;#id-46&quot;)" opacity="1"
+                            aria-describedby="id-22-description">
+                            <g transform="translate(40,40)">
+                              <g>
+                                <g>
+                                  <g>
+                                    <g>
+                                      <g>
+                                        <g>
+                                          <g transform="translate(54,0)">
+                                            <g fill="#ffffff" fill-opacity="0">
+                                              <rect width="871" height="286"></rect>
+                                            </g>
+                                            <g>
+                                              <g>
+                                                <g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,400)" display="none">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,343)" display="none">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,286)">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,229)">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,172)">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,114)">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,57)">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(0,-57)" display="none">
+                                                    <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                              <g>
+                                                <g></g>
+                                              </g>
+                                              <g>
+                                                <g>
+                                                  <g role="menu" stroke-opacity="0" fill-opacity="1" fill="#99f6ca"
+                                                    stroke="#1e3d73" aria-describedby="id-127-description" id="id-127">
+                                                    <g>
+                                                      <g clip-path="url(&quot;#id-132&quot;)">
+                                                        <g>
+                                                          <g>
+                                                            <g>
+                                                              <g stroke-opacity="0" fill="#9267ff" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(805.675,31.6)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,254.4 a0,0 0 0 1 -0,0 L0,254.4 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#99f6ca" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(733.095,90.7)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.061,0 a10,10 0 0 1 10,10 L58.061,195.3 a0,0 0 0 1 -0,0 L0,195.3 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#9267ff" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(660.505,105.8)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,180.2 a0,0 0 0 1 -0,0 L0,180.2 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#99f6ca" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(587.925,133.5)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,152.5 a0,0 0 0 1 -0,0 L0,152.5 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#9267ff" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(515.345,140.5)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.061,0 a10,10 0 0 1 10,10 L58.061,145.5 a0,0 0 0 1 -0,0 L0,145.5 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#9267ff" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(370.175,174)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,112 a0,0 0 0 1 -0,0 L0,112 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#99f6ca" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(442.755,171.3)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,114.7 a0,0 0 0 1 -0,0 L0,114.7 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#99f6ca" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(297.595,187.4)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.061,0 a10,10 0 0 1 10,10 L58.061,98.6 a0,0 0 0 1 -0,0 L0,98.6 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#9267ff" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(225.005,226.3)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,59.7 a0,0 0 0 1 -0,0 L0,59.7 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#9267ff" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(79.845,232.1)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.061,0 a10,10 0 0 1 10,10 L58.061,53.9 a0,0 0 0 1 -0,0 L0,53.9 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#99f6ca" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(152.425,227.2)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,58.8 a0,0 0 0 1 -0,0 L0,58.8 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <g stroke-opacity="0" fill="#99f6ca" fill-opacity="1"
+                                                                stroke="#1e3d73" role="menuitem" focusable="true"
+                                                                tabindex="0" transform="translate(7.255,242.4)">
+                                                                <g>
+                                                                  <g>
+                                                                    <path
+                                                                      d="M10,0 L48.07,0 a10,10 0 0 1 10,10 L58.07,43.6 a0,0 0 0 1 -0,0 L0,43.6 a0,0 0 0 1 -0,-0 L0,10 a10,10 0 0 1 10,-10 Z">
+                                                                    </path>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g></g>
+                                                    </g>
+                                                    <desc id="id-127-description">Series</desc>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                              <g clip-path="url(&quot;#id-345&quot;)">
+                                                <g>
+                                                  <g fill="#1e3d73" stroke="#1e3d73">
+                                                    <g>
+                                                      <g opacity="1" transform="translate(834.705,31.6)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-16,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(762.125,90.7)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-13.5,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(689.545,105.8)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-14.5,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(616.955,133.5)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-14,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(544.375,140.5)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-14,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(399.205,174)" focusable="true"
+                                                        tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-11.5,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(471.795,171.3)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-14,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(326.625,187.4)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-12,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(254.045,226.3)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-12,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(108.875,232.1)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-11,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(181.455,227.2)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-11,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g opacity="1" transform="translate(36.295,242.4)"
+                                                        focusable="true" tabindex="0">
+                                                        <g>
+                                                          <g fill="#000000" stroke-opacity="0"
+                                                            transform="translate(0,-10)">
+                                                            <g transform="translate(-10.5,-14)"
+                                                              style="user-select: none;"><text x="0" y="14.015625"
+                                                                overflow="hidden" dy="-3.784">
+
+                                                              </text></g>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                              <g>
+                                                <g>
+                                                  <g>
+                                                    <g></g>
+                                                  </g>
+                                                  <g>
+                                                    <g></g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                              <g>
+                                                <g></g>
+                                              </g>
+                                              <g>
+                                                <g></g>
+                                              </g>
+                                              <g role="button" focusable="true" tabindex="0" opacity="0"
+                                                visibility="hidden" aria-hidden="true" display="none">
+                                                <g fill="#6794dc" stroke="#ffffff" fill-opacity="1" stroke-opacity="0">
+                                                  <path></path>
+                                                </g>
+                                                <g transform="translate(9,9)">
+                                                  <g stroke="#ffffff" style="pointer-events: none;">
+                                                    <path d=" M0,0  L11,0 " transform="translate(2.5,7.5)"></path>
+                                                  </g>
+                                                  <g fill="#000000" style="pointer-events: none;">
+                                                    <g></g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                          <g>
+                                            <g>
+                                              <g aria-hidden="true">
+                                                <g>
+                                                  <g fill="#000000" transform="translate(0,143) rotate(-90)">
+                                                    <g display="none"></g>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0.15" fill="none"
+                                                    transform="translate(54,286)" opacity="1">
+                                                    <path transform="translate(-0.5,-0.5)" d=" M0,0  L871,0 "></path>
+                                                  </g>
+                                                  <g>
+                                                    <g>
+                                                      <g fill="#000000" fill-opacity="0" opacity="0" stroke-opacity="0"
+                                                        style="pointer-events: none;" transform="translate(54,143)">
+                                                        <g transform="translate(-44,-7)" style="user-select: none;">
+                                                          <text x="0" y="14.015625" dy="-3.784">
+                                                            <tspan>2,500</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,400.4)" display="none">
+                                                        <g transform="translate(-45,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>-1,000</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,343.2)" display="none">
+                                                        <g transform="translate(-38,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>-500</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,286)">
+                                                        <g transform="translate(-18,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>0</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,228.8)">
+                                                        <g transform="translate(-33,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>500</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,171.6)">
+                                                        <g transform="translate(-40,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>1,000</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,114.4)">
+                                                        <g transform="translate(-41,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>1,500</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,57.2)">
+                                                        <g transform="translate(-42,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>2,000</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,0)">
+                                                        <g transform="translate(-44,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>2,500</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                      <g fill="#000000" transform="translate(54,-57.2)" display="none">
+                                                        <g transform="translate(-42,-7)" style="user-select: none;">
+                                                          <text x="0" y="14" dy="-3.78">
+                                                            <tspan>3,000</tspan>
+                                                          </text>
+                                                        </g>
+                                                      </g>
+                                                    </g>
+                                                  </g>
+                                                  <g stroke="#000000" stroke-opacity="0" fill="none"
+                                                    style="pointer-events: none;" transform="translate(54,0)">
+                                                    <path d=" M0,0  L0,286 " transform="translate(-0.5,-0.5)"></path>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                          <g transform="translate(925,0)">
+                                            <g></g>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g>
+                                        <g transform="translate(54,0)"></g>
+                                      </g>
+                                      <g transform="translate(0,286)">
+                                        <g transform="translate(54,0)">
+                                          <g aria-hidden="true">
+                                            <g>
+                                              <g stroke="#000000" stroke-opacity="0" fill="none"
+                                                style="pointer-events: none;">
+                                                <path d=" M0,0  L871,0 " transform="translate(-0.5,-0.5)"></path>
+                                              </g>
+                                              <g>
+                                                <g>
+                                                  <g fill="#000000" fill-opacity="0" opacity="0" stroke-opacity="0"
+                                                    style="pointer-events: none;" transform="translate(435.5,0)">
+                                                    <g transform="translate(-4.5,10)" style="user-select: none;"><text
+                                                        x="0" y="14.015625" dy="-3.784">
+                                                        <tspan>L</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(834.71,0)">
+                                                    <g transform="translate(-14.5,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>INDIA</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(762.125,0)">
+                                                    <g transform="translate(-20.5,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>BERLIN</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(689.54,0)">
+                                                    <g transform="translate(-22,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>CHINA</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(616.96,0)">
+                                                    <g transform="translate(-31,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>JAPAN</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(544.375,0)">
+                                                    <g transform="translate(-10,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>PERU</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(399.21,0)">
+                                                    <g transform="translate(-23.5,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>UK</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(471.79,0)">
+                                                    <g transform="translate(-17,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>US</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(326.625,0)">
+                                                    <g transform="translate(-19.5,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>SPAIN</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(254.04,0)">
+                                                    <g transform="translate(-42,10)" style="user-select: none;"><text
+                                                        x="10" y="14" dy="-3.78">
+                                                        <tspan>IRE</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(108.875,0)">
+                                                    <g transform="translate(-22,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>RUS</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(181.46,0)">
+                                                    <g transform="translate(-41.5,10)" style="user-select: none;"><text
+                                                        x="10" y="14" dy="-3.78">
+                                                        <tspan>GER</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" transform="translate(36.29,0)">
+                                                    <g transform="translate(-27.5,10)" style="user-select: none;"><text
+                                                        x="0" y="14" dy="-3.78">
+                                                        <tspan>AUS</tspan>
+                                                      </text></g>
+                                                  </g>
+                                                  <g fill="#000000" display="none" transform="translate(-36.29,0)">
+                                                    <g transform="translate(0,10)" display="none"></g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                              <g stroke="#000000" stroke-opacity="0.15" fill="none" display="none"
+                                                transform="translate(0,-286)">
+                                                <path transform="translate(-0.5,-0.5)" d=" M0,0  L0,286 "></path>
+                                              </g>
+                                              <g fill="#000000" transform="translate(435.5,34)">
+                                                <g display="none"></g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                            <desc id="id-22-description">Chart</desc>
+                          </g>
+                          <g>
+                            <g>
+                              <g role="tooltip" visibility="hidden" opacity="0">
+                                <g fill="#ffffff" fill-opacity="0.9" stroke-width="1" stroke-opacity="1"
+                                  stroke="#ffffff" filter="url(&quot;#filter-id-51&quot;)" style="pointer-events: none;"
+                                  transform="translate(0,6)">
+                                  <path
+                                    d="M3,0 L3,0 L0,-6 L13,0 L21,0 a3,3 0 0 1 3,3 L24,8 a3,3 0 0 1 -3,3 L3,11 a3,3 0 0 1 -3,-3 L0,3 a3,3 0 0 1 3,-3">
+                                  </path>
+                                </g>
+                                <g>
+                                  <g fill="#ffffff" style="pointer-events: none;" transform="translate(12,6)">
+                                    <g transform="translate(0,7)" display="none"></g>
+                                  </g>
+                                </g>
+                              </g>
+                              <g visibility="hidden" display="none" style="pointer-events: none;">
+                                <g fill="#ffffff" opacity="1">
+                                  <rect width="1005" height="400"></rect>
+                                </g>
+                                <g>
+                                  <g transform="translate(502.5,200)">
+                                    <g>
+                                      <g stroke-opacity="1" fill="#f3f3f3" fill-opacity="0.8">
+                                        <g>
+                                          <g>
+                                            <path
+                                              d=" M53,0  a53,53,0,0,1,-106,0 a53,53,0,0,1,106,0 M42,0  a42,42,0,0,0,-84,0 a42,42,0,0,0,84,0 L42,0 ">
+                                            </path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g stroke-opacity="1" fill="#000000" fill-opacity="0.2">
+                                        <g>
+                                          <g>
+                                            <path
+                                              d=" M50,0  a50,50,0,0,1,-100,0 a50,50,0,0,1,100,0 M45,0  a45,45,0,0,0,-90,0 a45,45,0,0,0,90,0 L45,0 ">
+                                            </path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g fill="#000000" fill-opacity="0.4">
+                                        <g transform="translate(-16,-7)" style="user-select: none;"><text x="0" y="14"
+                                            dy="-3.78">
+                                            <tspan>100%</tspan>
+                                          </text></g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                              <g opacity="0.4" aria-labelledby="id-66-title" style="cursor: pointer;"
+                                transform="translate(0,379)" filter="url(&quot;#filter-id-66&quot;)">
+                                <g fill="#ffffff" opacity="0">
+                                  <rect width="66" height="21"></rect>
+                                </g>
+                                <g>
+                                  <g shape-rendering="auto" fill="none" stroke-opacity="1"
+                                    stroke-width="1.7999999999999998" stroke="#3cabff">
+                                    <path
+                                      d=" M15,15  C17.4001,15 22.7998,15.0001 27,15 C31.2002,14.9999 33.2999,6 36,6 C38.7001,6 38.6999,10.5 40.5,10.5 C42.3001,10.5 42.2999,6 45,6 C47.7001,6 50.9999,14.9999 54,15 C57.0002,15.0001 58.7999,15 60,15">
+                                    </path>
+                                  </g>
+                                  <g shape-rendering="auto" fill="none" stroke-opacity="1"
+                                    stroke-width="1.7999999999999998" stroke="url(&quot;#gradient-id-69&quot;)">
+                                    <path
+                                      d=" M6,15  C8.2501,15 9.7498,15.0001 15,15 C20.2502,14.9999 20.7748,3.6 27,3.6 C33.2252,3.6 33.8998,14.9999 39.9,15 C45.9002,15.0001 45.9748,15 51,15 C56.0252,15 57.7499,15 60,15">
+                                    </path>
+                                  </g>
+                                </g>
+                                <title id="id-66-title">Chart created using amCharts library</title>
+                              </g>
+                              <g role="tooltip" visibility="hidden" opacity="0">
+                                <g fill="#000000" fill-opacity="1" stroke-width="1" stroke-opacity="1" stroke="#000000"
+                                  style="pointer-events: none;" transform="translate(94,326)">
+                                  <path
+                                    d="M0,0 L20,0 a0,0 0 0 1 0,0 L20,10 a0,0 0 0 1 -0,0 L0,10 a0,0 0 0 1 -0,-0 L0,0 a0,0 0 0 1 0,-0">
+                                  </path>
+                                </g>
+                                <g>
+                                  <g fill="#ffffff" style="pointer-events: none;" transform="translate(104,326)">
+                                    <g transform="translate(0,5)" display="none"></g>
+                                  </g>
+                                </g>
+                              </g>
+                              <g role="tooltip" visibility="hidden" opacity="0">
+                                <g fill="#000000" fill-opacity="1" stroke-width="1" stroke-opacity="1" stroke="#000000"
+                                  style="pointer-events: none;" transform="translate(-25,40)">
+                                  <path
+                                    d="M0,0 L20,0 a0,0 0 0 1 0,0 L20,0 L20,0 L25,0 L20,10 L20,10 a0,0 0 0 1 -0,0 L0,10 a0,0 0 0 1 -0,-0 L0,0 a0,0 0 0 1 0,-0">
+                                  </path>
+                                </g>
+                                <g>
+                                  <g fill="#ffffff" style="pointer-events: none;" transform="translate(-15,40)">
+                                    <g transform="translate(0,5)" display="none"></g>
+                                  </g>
+                                </g>
+                              </g>
+                              <g role="tooltip" visibility="hidden" opacity="0" aria-describedby="id-127"
+                                transform="translate(529.5,183)">
+                                <g fill="#1e3d73" fill-opacity="0.9" stroke-width="1" stroke-opacity="1"
+                                  stroke="#ffffff" filter="url(&quot;#filter-id-137&quot;)"
+                                  style="pointer-events: none;" transform="translate(-30,-5.5)">
+                                  <path
+                                    d="M3,0 L21,0 a3,3 0 0 1 3,3 L24,3 L24,0.5 L30,5.5 L24,10.5 L24,8 a3,3 0 0 1 -3,3 L3,11 a3,3 0 0 1 -3,-3 L0,3 a3,3 0 0 1 3,-3">
+                                  </path>
+                                </g>
+                                <g>
+                                  <g fill="#ffffff" style="pointer-events: none;" transform="translate(-18,-5.5)">
+                                    <g transform="translate(0,7)" display="none"></g>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xl-3">
+            <div
+              class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-success border-success">
+              <div class="widget-chat-wrapper-outer">
+                <div class="widget-chart-content pt-3 pl-3 pb-1">
+                  <div class="widget-chart-flex">
+                    <div class="widget-numbers">
+                      <div class="widget-chart-flex">
+                        <div class="fsize-4"><span>2017</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="widget-subheading mb-0 opacity-5">User Graph</h6>
+                </div>
+                <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-0 he-auto row">
+                  <div class="col-md-12"><svg width="100%" height="80" viewBox="0 0 300 80" stroke-width="3"
+                      stroke-linecap="round">
+                      <defs>
+                        <linearGradient id="vue-trend-270" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0" stop-color="var(--success)"></stop>
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M8 71.99199199950012L35.1324271929652 16.97660633669389S39.55555555555556 8.007998000499875 47.51574580164955 14.060714022748899L63.15092086501712 25.949283477875937S71.11111111111111 32.00199950012496 80.03057379114637 27.480585396168284L93.74720398663142 20.52741260433157S102.66666666666667 16.005998500374893 112.66666666666667 16.005998500374893L124.22222222222223 16.005998500374893S134.22222222222223 16.005998500374893 143.9157093989931 13.549108931473095L156.0842906010069 10.464887569401673S165.77777777777777 8.007998000499875 173.73796802387176 14.060714022748897L197.33333333333334 32.00199950012496L220.92869864279493 49.943284977501044S228.8888888888889 55.996000999750066 235.08345725156573 48.14569382103893L254.24987608176764 23.85630567908603S260.44444444444446 16.005998500374893 270.13793235280855 13.54911181792509L292 8.008008000499874"
+                        fill="none" stroke="url(#vue-trend-270)"
+                        style="transition: stroke-dashoffset 2000ms ease 0s; stroke-dasharray: 359.207, 359.207; stroke-dashoffset: 0;">
+                      </path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div
+              class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-primary border-primary">
+              <div class="widget-chat-wrapper-outer">
+                <div class="widget-chart-content pt-3 pl-3 pb-1">
+                  <div class="widget-chart-flex">
+                    <div class="widget-numbers">
+                      <div class="widget-chart-flex">
+                        <div class="fsize-4"><span>2018</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="widget-subheading mb-0 opacity-5">User Graph</h6>
+                </div>
+                <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-0 he-auto row">
+                  <div class="col-md-12"><svg width="100%" height="80" viewBox="0 0 300 80" stroke-width="3"
+                      stroke-linecap="round">
+                      <defs>
+                        <linearGradient id="vue-trend-273" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0" stop-color="var(--primary)"></stop>
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M8 71.9893268877041L35.132130792211385 16.979125263804015S39.55555555555556 8.010663112295902 44.64893755519782 16.616327514636968L66.01772911146885 52.720560189461665S71.11111111111111 61.326224591802735 78.13374553158297 54.207052884616296L95.64403224619481 36.456059411285075S102.66666666666667 29.336887704098636 110.9519590863038 23.737429737375116L125.9369298025851 13.610121079019422S134.22222222222223 8.010663112295902 140.16976844679553 16.049736062988906L159.83023155320447 42.62403934520836S165.77777777777777 50.663112295901364 175.25150715966703 53.864432585833015L187.8596039514441 58.124904301871084S197.33333333333334 61.326224591802735 204.3559677538052 54.207052884616296L221.86625446841705 36.456059411285075S228.8888888888889 29.336887704098636 237.17418130852604 23.737429737375116L252.15915202480733 13.610121079019422S260.44444444444446 8.010663112295902 266.3919897678498 16.049736729699795L292 50.66312229590137"
+                        fill="none" stroke="url(#vue-trend-273)"
+                        style="transition: stroke-dashoffset 2000ms ease 0s; stroke-dasharray: 415.348, 415.348; stroke-dashoffset: 0;">
+                      </path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div
+              class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-warning border-warning">
+              <div class="widget-chat-wrapper-outer">
+                <div class="widget-chart-content pt-3 pl-3 pb-1">
+                  <div class="widget-chart-flex">
+                    <div class="widget-numbers">
+                      <div class="widget-chart-flex">
+                        <div class="fsize-4"><span>2019</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="widget-subheading mb-0 opacity-5">User Graph</h6>
+                </div>
+                <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-0 he-auto row">
+                  <div class="col-md-12"><svg width="100%" height="80" viewBox="0 0 300 80" stroke-width="3"
+                      stroke-linecap="round">
+                      <defs>
+                        <linearGradient id="vue-trend-276" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0" stop-color="var(--warning)"></stop>
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M8 46.397431023590556L30.452196621678443 16.051677576354063S36.4 8.012794882047181 40.45743882703499 17.15266305204115L60.742561172965 62.84733694795886S64.8 71.98720511795283 70.74780237696095 63.94832168275999L87.25219762303905 41.64144241160227S93.19999999999999 33.60255897640943 100.62906877674743 26.90861117930523L114.17093122325255 14.706742679151386S121.6 8.012794882047181 127.54780237696095 16.051678317240015L144.05219762303906 38.35855758839773S150 46.39744102359056 157.42906877674744 53.09138882069477L170.97093122325253 65.29325732084861S178.39999999999998 71.98720511795283 182.45743882703496 62.84733694795886L202.742561172965 17.15266305204115S206.79999999999998 8.012794882047181 212.74780237696092 16.051678317240015L229.25219762303905 38.35855758839773S235.2 46.39744102359056 242.62906877674743 53.09138882069476L256.1709312232526 65.29325732084862S263.6 71.98720511795283 267.6574393568517 62.847337183159055L292 8.012804882047181"
+                        fill="none" stroke="url(#vue-trend-276)"
+                        style="transition: stroke-dashoffset 2000ms ease 0s; stroke-dasharray: 479.026, 479.026; stroke-dashoffset: 0;">
+                      </path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div
+              class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-danger border-danger">
+              <div class="widget-chat-wrapper-outer">
+                <div class="widget-chart-content pt-3 pl-3 pb-1">
+                  <div class="widget-chart-flex">
+                    <div class="widget-numbers">
+                      <div class="widget-chart-flex">
+                        <div class="fsize-4"><span>2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="widget-subheading mb-0 opacity-5">User Graph</h6>
+                </div>
+                <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-0 he-auto row">
+                  <div class="col-md-12"><svg width="100%" height="80" viewBox="0 0 300 80" stroke-width="3"
+                      stroke-linecap="round">
+                      <defs>
+                        <linearGradient id="vue-trend-279" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0" stop-color="var(--danger)"></stop>
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M8 44.57011282205084L30.902657461392298 31.302350813043738S39.55555555555556 26.289631533847476 49.16073118020792 23.50743793533852L61.50593548645875 19.931579488254744S71.11111111111111 17.149385889745787 76.09840055846352 25.816965942351437L97.67937721931426 63.323279701750245S102.66666666666667 71.9908597543559 110.2149572790244 65.43164418910786L126.6739316098645 51.12933838729888S134.22222222222223 44.57012282205084 142.87511912700512 39.557401489760515L157.12488087299488 31.302352866137802S165.77777777777777 26.289631533847476 173.3260683901355 32.848847099095515L189.7850427209756 47.15115290090449S197.33333333333334 53.71036846615253 205.98623023811624 58.72308979844285L220.23599198410602 66.97813842206557S228.8888888888889 71.9908597543559 237.5417857936718 66.97813842206557L251.79154753966156 58.72308979844286S260.44444444444446 53.71036846615253 266.126345823441 45.481395461010436L292 8.009150245644104"
+                        fill="none" stroke="url(#vue-trend-279)"
+                        style="transition: stroke-dashoffset 2000ms ease 0s; stroke-dasharray: 367.812, 367.812; stroke-dashoffset: 0;">
+                      </path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="media_card_list">
+            <div class="single_media_card">
+              <span>Followers</span>
+              <h3>35.6 K</h3>
+            </div>
+            <div class="single_media_card">
+              <span>Followers</span>
+              <h3>35.6 K</h3>
+            </div>
+            <div class="single_media_card">
+              <span>Followers</span>
+              <h3>35.6 K</h3>
+            </div>
+            <div class="single_media_card">
+              <span>Followers</span>
+              <h3>35.6 K</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/fontawesome.js"></script>
+  <script src="../assets/js/fontawesome.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/sky-admin.min.js?v=2.0.1" type="text/javascript"></script>
+  <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
+      demo.initChartsPages();
+    });
+  </script>
+</body>
+
+</html>
